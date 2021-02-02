@@ -16,10 +16,10 @@ Including another URLconf
 
 from django.urls import path
 from . import views
-
 urlpatterns = [
     path('frequency/', views.freq, name="freq"),
-
+    path('', views.start, name="start"),
+	
     path('result/<str:pk_test>/',views.res,name='result')
 	
 ]
