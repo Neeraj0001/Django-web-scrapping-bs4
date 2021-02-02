@@ -92,3 +92,7 @@ def res(request,pk_test):
     context={'profile':profile}
     print(context)
     return render(request, 'result.html',context)
+
+
+def start(request):
+    return redirect('freq')
